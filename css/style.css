@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+
+header {
+    margin: 0;
+    padding: 10px;
+    position: fixed;
+}
+.logo img {
+    width: 150px;
+}
+
+.masthead {
+    background: url(../images/kid.jpg);
+    background-size: cover;
+    background-position: 40%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.header-box {
+    width: 90vw;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 30px) 100%, 0% 100%);
+    background-color: #ff0000;
+    position: absolute;
+    bottom: 20%;
+    padding: 20px 10px 25px;
+}
+.header-box h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    margin-bottom: 5px;
+/*    letter-spacing: 1px;*/
+}
+
+.header-box a {
+    color: #000;
+}
+
+.header-box h2 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.title-line {
+    position: absolute;
+    bottom: 3%;
+    text-align: right;
+    right: 1%;
+    color: #fff;
+}
+
+.title-line h1 {
+    font-size: 1.2em;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.title-line h2 {
+    font-size: 0.9em;
+    font-weight: 500;
+    padding-right: 3px;
+}
+
+a.button {
+    background-color: transparent;
+    padding: 5px 10px;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: 500;
+    text-decoration: none;
+    }
+
+.button:nth-of-type(1) {
+    margin-right: 15px;
+}
+
