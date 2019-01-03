@@ -12,15 +12,20 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
     margin: 0;
 }
 
+a {
+    color: #000;
+    font-weight: 500;
+}
 
 header {
     margin: 0;
     padding: 10px;
-    position: fixed;
+    position: absolute;
     z-index: 999;
 }
 .logo img {
@@ -28,6 +33,7 @@ header {
 }
 
 .masthead {
+    position: relative;
     background: url(../images/kid.jpg);
     background-size: cover;
     background-position: 40%;
@@ -43,6 +49,7 @@ header {
     bottom: 20%;
     padding: 20px 10px 25px;
 }
+
 .header-box h1 {
     color: #fff;
     text-transform: uppercase;
@@ -66,9 +73,9 @@ header {
 
 .title-line {
     position: absolute;
-    bottom: 3%;
+    bottom: 10px;
     text-align: right;
-    right: 1%;
+    right: 10px;
     color: #fff;
 }
 
@@ -103,6 +110,185 @@ a.button:hover {
     background-color: #000;
 }
 
+.dark-overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+        
+}
+
+#mission {
+    position: relative;
+    background: url(../images/dheeraj-running.jpg);
+    background-size: cover;
+    background-position: 20%;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+.right-box {
+    width: 80vw;
+    clip-path: polygon(35px 0, 100% 0, 100%  100%, 0% 100%);
+    background-color: #ff0000;
+    position: absolute;
+    right: 0;
+    bottom: 20%;
+    padding: 20px 10px 20px 40px;
+}
+
+.left-box {
+    width: 80vw;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 35px)  100%, 0% 100%);
+    background-color: #ff0000;
+    position: absolute;
+    left: 0;
+    bottom: 20%;
+    padding: 20px 30px 20px 10px;
+    
+    
+}
+
+.right-box h1,
+.left-box h1 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.right-box p,
+.left-box p {
+    color: #fff;
+    margin: 10px 0;
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 1.2em;
+}
+/*
+
+.right-box p:last-of-type,
+.left-box p:last-of-type {
+    margin-bottom: 30px;
+}
+*/
+
+#ngo {
+    position: relative;
+    background: url(../images/end-incest-banner.jpg);
+    background-size: cover;
+    background-position: 60%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#ngo .left-box {
+    bottom: 10%;
+}
+
+#race-plan {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 50px 10px 30px;
+}
+
+.svg-container {
+    margin: 0 auto;
+}
+
+.text-container {
+    margin-bottom: 40px;
+}
+
+.text-container h1,
+.svg-container h1 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+table {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.text-container h2 {
+    font-size: 1em;
+}
+
+.text-container ul {
+    font-size: 0.9em;
+}
+
+.text-container ul li {
+    margin: 10px 0;
+}
+
+.route {
+    height: 200px;
+    margin-left: 20px;
+    float: left;
+}
+
+.route-marks {
+    margin: 0;
+    list-style: none;
+    font-size: 0.9em;
+    padding-left: 40px;
+}
+
+.route-marks li:nth-of-type(2) {
+    margin-top: 25px;
+}
+
+.route-marks li:nth-of-type(3) {
+    margin-top: 29px;
+}
+
+.route-marks li:nth-of-type(4) {
+    margin-top: 29px;
+}
+
+.route-marks li:nth-of-type(5) {
+    margin-top: 29px;
+}
+
+td:first-of-type {
+    font-weight: 500;
+    
+}
+
+td:last-of-type {
+    font-weight: 300;
+    padding-left: 10px;
+}
+
+#charity-dinner {
+    position: relative;
+    background: url(../images/charity-dinner.jpg);
+    background-size: cover;
+    background-position: 85%;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#charity-dinner .left-box {
+    bottom: 10%;
+}
+
+footer {
+    clear: both;
+    padding: 15px 0;
+    background-color: #ff0000;
+}
+
+footer h2 {
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: 300;
+    text-align: center;
+}
+
 @media screen and (min-width: 600px) {
     .masthead {
         background: #ff0000;
@@ -129,6 +315,14 @@ a.button:hover {
         height: 100vh;
     }
     
+    .right-box, .left-box {
+        width: 60vw;
+    }
+    
+    #race-plan {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -152,5 +346,54 @@ a.button:hover {
     .title-line h2 {
         font-size: 1.2em;
     }
+    
+    #mission {
+        height: 80vh;
+        background-position: 20% 30%;
+    }
+    
+    .right-box {
+        width: 40vw;
+        padding-left: 50px;
+    }
+    
+    #ngo {
+        height: 80vh;
+        background-position: 40% 0%;
+    }
+    
+    #ngo .left-box,
+    #charity-dinner .left-box {
+        width: 40vw;
+        bottom: 20%;
+    }
+    
+    .right-box h1,
+    .left-box h1 {
+        font-size: 2em;
+    }
+    
+    .right-box p,
+    .left-box p {
+        font-size: 1em;
+    }
+    
+    .text-container h1,
+    .svg-container h1 {
+        font-size: 2em;
+    }
+    
+    table {
+        font-size: 1em;
+    }
+    
+    .text-container h2 {
+        font-size: 1.2em;
+    }
+    .text-container ul {
+        font-size: 1em;
+    }
+    
+    
 }
 
